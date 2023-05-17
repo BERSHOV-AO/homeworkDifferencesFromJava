@@ -1,6 +1,7 @@
 fun main() {
 
-    val likes = 41;
-    val likesComment = if (likes % 2 == 0) "Понравилось $likes людям" else "Понравилось $likes человеку"
+    val likes = 11;
+    val likesComment =
+        if (likes % 10 == 1 && likes % 100 != 11) "Понравилось $likes человеку" else "Понравилось $likes людям"
     println(likesComment)
 }
